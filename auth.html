@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimalShop - Auth</title>
+</head>
+
+<body>
+    <main class="page">
+        <form class="page__form" enctype="multipart/form-data" method="post">
+            <p class="error" %error_state%>Incorrect email or password</p>
+            <label class="form__entry">Email
+                <input class="entry__text" type="email" name="email" autocomplete="email" required>
+            </label>
+            <label class="form__entry">Password
+                <input class="entry__text" type="password" name="password" autocomplete="current-password" required>
+            </label>
+            <button class="form__button" type="submit">Authenticate</button>
+        </form>
+    </main>
+</body>
+
+</html>
