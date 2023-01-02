@@ -40,6 +40,18 @@
         </form>
     </main>
     <script src="static/jquery-3.6.3.min.js"></script>
+    <script>
+        $().ready(function () {
+            $('.background').hide().fadeIn(1000);
+
+            $('.page').css('background-color', 'white');
+
+            $('.form').hide().delay(1000).fadeIn(1000);
+            $('.form').height(0).animate({
+                height: '90vh'
+            }, { duration: 2000, queue: false }, 'easeInOutQuint');
+        })
+    </script>
     <script src="common.blocks/input/input.js"></script>
 </body>
 

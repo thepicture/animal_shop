@@ -23,9 +23,15 @@
     <script src="/static/jquery-3.6.3.min.js"></script>
     <script>
         $().ready(function () {
-            $('main').append('<p>You will be redirected to the main page shortly...</p>');
-
+            $('.form').append('<p>You will be redirected to the main page shortly...</p>');
             setTimeout(() => window.location = 'index.php', 3200);
+
+            $('.form').css({
+                'position': 'relative',
+                'margin-left': '-5em'
+            }).hide().fadeIn(1000).animate({
+                'margin-left': '+=5em'
+            }, { duration: 1000, queue: false });
         })
     </script>
 </body>
