@@ -8,13 +8,13 @@
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  height: 44px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   font-size: 100%;
   line-height: 1.15;
   margin: 12px 0 0;
   outline: none;
   overflow: hidden;
-  padding: 0 25px;
   position: relative;
   text-align: center;
   text-transform: none;
@@ -24,6 +24,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   width: 100%;
+  text-decoration: none;
 }
 
 .button:disabled {
