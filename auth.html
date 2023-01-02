@@ -5,21 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnimalShop - Auth</title>
+    <link rel="stylesheet" href="static/reset.css">
+    <link rel="stylesheet" href="common.blocks/background/page__background.css">
+    <link rel="stylesheet" href="common.blocks/button/button.css">
+    <link rel="stylesheet" href="common.blocks/button/_primary/button_primary.css">
+    <link rel="stylesheet" href="common.blocks/form/form.css">
+    <link rel="stylesheet" href="common.blocks/form/_centered/form_centered.css">
+    <link rel="stylesheet" href="common.blocks/heading/heading.css">
+    <link rel="stylesheet" href="common.blocks/input/input.css">
+    <link rel="stylesheet" href="common.blocks/input/__label/input__label.css">
+    <link rel="stylesheet" href="common.blocks/input/__text/input__text.css">
+    <link rel="stylesheet" href="common.blocks/page/page.css">
+    <link rel="stylesheet" href="common.blocks/page/__background/page__background.css">
+    <link rel="stylesheet" href="common.blocks/page/__form/page__form.css">
 </head>
 
 <body>
     <main class="page">
-        <form class="page__form" enctype="multipart/form-data" method="post">
+        <img class="background page__background" src="/static/background.jpg" alt="a dog looking to the right"
+            loading="eager">
+        <form class="form page__form form_centered" enctype="multipart/form-data" method="post">
+            <h1 class="heading">AnimalShop</h1>
             <p class="error" %error_state%>Incorrect email or password</p>
-            <label class="form__entry">Email
-                <input class="entry__text" type="email" name="email" autocomplete="email" required>
-            </label>
-            <label class="form__entry">Password
-                <input class="entry__text" type="password" name="password" autocomplete="current-password" required>
-            </label>
-            <button class="form__button" type="submit">Authenticate</button>
+            <fieldset class="input">
+                <label for="email" class="input__label">Email</label>
+                <input id="email" class="input__text" type="email" name="email" autocomplete="email" required>
+            </fieldset>
+            <fieldset class="input">
+                <label for="password" class="input__label">Password</label>
+                <input id="password" class="input__text" type="password" name="password" autocomplete="current-password"
+                    required>
+            </fieldset>
+            <button class="button button_primary" type="submit">Authenticate</button>
         </form>
     </main>
+    <script src="static/jquery-3.6.3.min.js"></script>
+    <script src="common.blocks/input/input.js"></script>
 </body>
 
 </html>

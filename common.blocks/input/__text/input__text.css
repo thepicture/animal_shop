@@ -1,0 +1,12 @@
+.input__text {
+  border: none;
+  outline: none;
+  padding: 5px 5px 8px 0px;
+  width: 100%;
+  font-size: 18px;
+  border-bottom: solid 1px #efefef;
+}
+
+.input__text.focus {
+  border-bottom: solid 1px green;
+}
