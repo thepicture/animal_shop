@@ -22,10 +22,11 @@ Route::get('/', function () {
 
 Route::get('auth', function () {
     return view('auth');
-});
-
-Route::get('auth', function () {
-    return view('auth');
 })->name('auth');
 
+Route::get('registration', function () {
+    return view('registration');
+})->name('registration');
+
 Route::post('auth', [UserController::class, 'authenticate']);
+Route::post('registration', [UserController::class, 'register']);

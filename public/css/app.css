@@ -2,6 +2,7 @@
 @import url("common.blocks/background/page__background.css");
 @import url("common.blocks/button/button.css");
 @import url("common.blocks/button/_primary/button_primary.css");
+@import url("common.blocks/button/_common/button_common.css");
 @import url("common.blocks/form/form.css");
 @import url("common.blocks/form/_centered/form_centered.css");
 @import url("common.blocks/heading/heading.css");

@@ -26,6 +26,7 @@
                 <input id="password" class="input__text" type="password" name="password" autocomplete="current-password" required>
             </fieldset>
             <button class="button button_primary" type="submit">Authenticate</button>
+            <a class="button button_common" href="/registration">Create Account</a>
         </form>
     </main>
     <script src="{{ URL::asset('js/jquery-3.6.3.min.js') }}"></script>

@@ -37,4 +37,9 @@ class UserController extends BaseController
             return redirect()->route('auth', array('state' => 'rejected'), 302, array('cache-control' => 'no-cache'));
         }
     }
+
+    public function register(Request $request, Response $response)
+    {
+        return view('registered');
+    }
 }
