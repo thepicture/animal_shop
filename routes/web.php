@@ -2,8 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
-use App\Helpers\AntiSpamFilter;
-use App\Helpers\HeaderLogger;
+use App\Http\Controllers\PetController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +29,5 @@ Route::get('registration', function () {
 
 Route::post('auth', [UserController::class, 'authenticate']);
 Route::post('registration', [UserController::class, 'register']);
+
+Route::get('/pets', [PetController::class, 'getAll']);
